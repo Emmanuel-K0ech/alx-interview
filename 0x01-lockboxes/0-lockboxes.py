@@ -3,12 +3,7 @@
 
 
 def next_opened_box(opened_boxes):
-    """Looks for the next opened box
-    Args:
-        opened_boxes (dict): Dictionary which contains boxes already opened
-    Returns:
-        list: List with the keys contained in the opened box
-    """
+    """Looks for the next opened box"""
     for index, box in opened_boxes.items():
         if box.get('status') == 'opened':
             box['status'] = 'opened/checked'
@@ -17,12 +12,7 @@ def next_opened_box(opened_boxes):
 
 
 def canUnlockAll(boxes):
-    """Check if all boxes can be opened
-    Args:
-        boxes (list): List which contain all the boxes with the keys
-    Returns:
-        bool: True if all boxes can be opened, otherwise, False
-    """
+    """Check if all boxes can be opened"""
     if len(boxes) <= 1 or boxes == [[]]:
         return True
 
@@ -57,7 +47,7 @@ def canUnlockAll(boxes):
 
 
 def main():
-    """Entry point"""
+    """Point of Entry"""
     canUnlockAll([[]])
 
 
