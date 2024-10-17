@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ Module 0-minoperations.py"""
 import math
 from typing import List
