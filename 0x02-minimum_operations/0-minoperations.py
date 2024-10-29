@@ -30,8 +30,8 @@ def minOperations(n: int) -> int:
         n = n // 2
 
     for x in range(3, int(math.sqrt(n)) + 1, 2):
-        sum += i
-        n = n // i
+        sum += x
+        n = n // x
 
     if n > 2:
         sum += n
