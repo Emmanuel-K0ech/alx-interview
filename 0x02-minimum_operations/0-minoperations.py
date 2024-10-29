@@ -24,16 +24,13 @@ def minOperations(n: int) -> int:
     Return:
         int: minimum number of operations needed
     """
-    sum: int = 0
-    while n % 2 == 0:
-        sum += 2
-        n = n // 2
-
-    for x in range(3, int(math.sqrt(n)) + 1, 2):
-        sum += x
-        n = n // x
-
-    if n > 2:
-        sum += n
-
-    return sum
+    if (n < 2):
+        return 0
+    opr, root = 0, 2
+    while root <= n:
+        if n % root == 0:
+            opr += root
+            n = n / root
+            root -= 1
+        root += 1
+    return opr
