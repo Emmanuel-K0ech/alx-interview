@@ -1,0 +1,143 @@
+# Portfolio Project Idea Bank
+
+## Guide for this Project Idea Bank
+- If you are in a team without Back-End engineers, please use Firebase as your backend.
+- Please adhere to the tech stack mentioned for each project.
+
+## Project Ideas
+
+### Interactive Quiz Application
+- **Tech Stack**: Python (Flask/Django), HTML, CSS
+- **Description**: Create a quiz application where users can answer multiple-choice questions. Implement scoring, time limits, and feedback. This project will reinforce Python programming skills and web development basics.
+- **Milestones**:
+  - Auth system/Session management
+  - Storage of quiz results under user accounts (setup DB storage)
+  - Make application responsive
+  - **Bonus**: Add functionality to include new sets of quiz questions
+  - **Bonus**: Expose quiz questions via a REST API
+
+### Algorithm Visualizer
+- **Tech Stack**: JavaScript (React), HTML, CSS
+- **Description**: Build a web application that visualizes sorting algorithms like bubble sort, quicksort, etc. This project will reinforce data structure and algorithm concepts while working with React.
+- **Milestones**:
+  - Feature to visualize different algorithms
+  - Feature to filter algorithms (sort/search)
+  - Make application responsive
+  - **Bonus**: Include algorithm implementations in Python, C, and JavaScript with switching functionality
+
+### Chat Application
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), WebSocket
+- **Description**: Develop a real-time chat application where users can join different rooms and exchange messages. This project will enhance understanding of WebSocket communication.
+- **Milestones**:
+  - Implement authentication
+  - Store user chat history
+  - Make application responsive
+  - **Bonus**: Allow users to upload profile pictures and add bios
+  - **Bonus**: Allow users to view bios of other users in the same chatrooms
+
+### Blog Platform
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), MongoDB
+- **Description**: Build a blog platform where users can create, edit, and delete blog posts. Integrate a database (MongoDB or SQL) for storing and retrieving blog data.
+- **Milestones**:
+  - Implement authentication
+  - Store blog posts
+  - Show users list of all posts they’ve read so far
+  - Allow users to create, edit, and delete their blog posts
+  - Make application responsive
+  - **Bonus**: Implement a markdown editor for blog posts
+  - **Bonus**: Allow users to upload header images
+
+### E-commerce Website
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), MongoDB
+- **Description**: Create a simple e-commerce website with features like product listings, shopping cart, and order history.
+- **Milestones**:
+  - Implement authentication
+  - Implement storage
+  - Implement a working cart
+  - Implement product listings
+  - Allow users to view purchase history
+  - Make application responsive
+  - **Bonus**: Integrate Stripe for credit card payments
+
+### Continuous Integration/Continuous Deployment (CI/CD) Pipeline
+- **Tech Stack**: DevOps tools (Jenkins, Docker, GitHub)
+- **Description**: Implement a CI/CD pipeline for a sample application. Automate the build, test, and deployment processes using Jenkins, Docker, and GitHub.
+
+### Language Learning Flashcards
+- **Tech Stack**: JavaScript (React), HTML, CSS
+- **Description**: Create a language learning app with flashcards for vocabulary. Track progress and allow users to create decks and flip cards for translations.
+- **Milestones**:
+  - Implement authentication
+  - View cards they’ve already gone through
+  - Implement animations when flipping cards
+  - Allow users to create decks of flashcards
+  - Allow users to share cards on social media
+  - Make application responsive
+
+### Job Board for Tech Positions
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), MongoDB
+- **Description**: Develop a job board where companies can post tech job openings and users can apply.
+- **Milestones**:
+  - Allow user authentication
+  - Enable users to create job profiles
+  - Allow companies to track posted jobs
+  - Allow users to track jobs they've applied for
+  - Make application responsive
+  - **Bonus**: Recommend jobs based on user skills
+
+### Social Media Dashboard
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), MongoDB
+- **Description**: Build a simplified social media dashboard where users can post updates, follow others, and view a feed.
+- **Milestones**:
+  - Implement user authentication
+  - Users can post and delete updates
+  - Users can follow other users
+  - Users can like and comment on posts
+  - Make application responsive
+
+### Online Code Editor
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), Docker
+- **Description**: Create an online code editor supporting multiple programming languages. Use Docker for containerization.
+- **Milestones**:
+  - Implement authentication
+  - Users can edit and run code
+  - Users can save and view code snippets
+  - Users can delete code snippets
+
+### Health and Fitness Tracker
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), MongoDB
+- **Description**: Develop a health and fitness tracker where users can log exercises, set goals, and track progress.
+- **Milestones**:
+  - Implement authentication
+  - Users can log exercises and set goals
+  - Users can track progress over time
+  - Implement charts to visualize progress
+  - Make application responsive
+
+### Event Planning Platform
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), MongoDB
+- **Description**: Build an event planning platform for users to create, manage, and RSVP to events.
+- **Milestones**:
+  - Implement authentication
+  - Users can create and edit events
+  - Users can share event links
+  - Users can RSVP to events
+  - Notifications and maps integration
+
+### Cryptocurrency Portfolio Tracker
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), MongoDB
+- **Description**: Build a cryptocurrency portfolio tracker where users can monitor their crypto investments.
+- **Milestones**:
+  - Implement authentication
+  - Integrate crypto APIs
+  - Implement charts for portfolio performance
+  - Make application responsive
+
+### Online Music Player
+- **Tech Stack**: JavaScript (React for frontend, Node for backend), MongoDB
+- **Description**: Build an online music player where users can create playlists, search for songs, and play music.
+- **Milestones**:
+  - Implement authentication
+  - Integrate music APIs
+  - Users can create and search playlists
+  - Users can control music playback (play, pause, skip)
