@@ -12,7 +12,7 @@ def count_border_cells(x, y, grid):
         border_count += 1
     if x + 1 < rows and grid[x + 1][y] == 1:
         border_count += 1
-    if y -1 >= 0 and grid[x][y - 1] == 1:
+    if y - 1 >= 0 and grid[x][y - 1] == 1:
         border_count += 1
     if x - 1 >= 0 and grid[x - 1][y] == 1:
         border_count += 1
@@ -31,5 +31,5 @@ def island_perimeter(grid):
             if grid[x][y] == 1:
                 perimeter += 4
                 perimeter -= count_border_cells(x, y, grid)
-    
+
     return perimeter
