@@ -1,25 +1,25 @@
 #!/usr/bin/node
-// Star Wars Characters of a particulars Film using Async/Await
-const axios = require('axios');
-
-if (process.argv.length !== 3) {
-  console.error('Usage: ./0-starwars_characters.js <movie ID>');
-  process.exit(1);
-}
-
+const request = require('request');
 const movieId = process.argv[2];
-const baseURL = 'https://swapi-api.alx-tools.com/api/films/';
+const options = {
+  url: 'https://swapi-api.hbtn.io/api/films/' + movieId,
+  method: 'GET'
+};
 
-(async () => {
-  try {
-    const { data } = await axios.get(`${baseURL}${movieId}`);
-    const characters = data.characters;
-
-    for (const characterUrl of characters) {
-      const { data: characterData } = await axios.get(characterUrl);
-      console.log(characterData.name);
-    }
-  } catch (error) {
-    console.error('Error fetching data:', error.message);
+request(options, function (error, response, body) {
+  if (!error) {
+    const chars = JSON.parse(body).chars;
+    printChar(chars, 0);
   }
-})();
+});
+
+function printChar (chars, indx) {
+  request(chars[indx], function (error, response, body) {
+    if (!error) {
+      console.log(JSON.parse(body).name);
+      if (indx + 1 < chars.length) {
+        printChar(chars, indx + 1);
+      }
+    }
+  });
+}
